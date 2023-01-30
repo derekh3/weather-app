@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello</h1>
-    <div class="search-bar">
-      <label for="search-location">Search:</label>
-      <input type="text" id="search-location" />
-      <button class="submit-search">Submit</button>
-    </div>
-    <div class="weather-container">
-      <div class="name-container weather-subcontainer">
-        <div class="name-text subcontainer-text"></div>
+    <div class="main-container">
+      <div class="top-bar">
+        <div class="search-bar">
+          <label for="search-location"></label>
+          <input type="text" id="search-location" placeholder="Search city" />
+          <button class="submit-search">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
       </div>
-      <div class="icon-container weather-subcontainer">
-        <div class="icon-subcontainer subcontainer-text"></div>
+      <div class="todays-weather">
+        <div class="weather-container">
+          <div class="todays-left-container">
+            <div class="description-container weather-subcontainer">
+              <div class="description-text subcontainer-text"></div>
+            </div>
+            <div class="name-container weather-subcontainer">
+              <div class="name-text subcontainer-text"></div>
+            </div>
+            <div class="temperature-container weather-subcontainer">
+              <div class="temperature-text subcontainer-text"></div>
+            </div>
+          </div>
+          <div class="todays-middle-border"></div>
+          <div class="todays-right-container">
+            <div class="icon-container weather-subcontainer">
+              <div class="icon-subcontainer subcontainer-text"></div>
+            </div>
+            <div class="humidity-container weather-subcontainer">
+              <div class="humidity-text subcontainer-text"></div>
+            </div>
+            <div class="cloudiness-container weather-subcontainer">
+              <div class="cloudiness-text subcontainer-text"></div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="description-container weather-subcontainer">
-        <div class="description-text subcontainer-text"></div>
-      </div>
-      <div class="temperature-container weather-subcontainer">
-        <div class="temperature-text subcontainer-text"></div>
-      </div>
-      <div class="humidity-container weather-subcontainer">
-        <div class="humidity-text subcontainer-text"></div>
-      </div>
-      <div class="cloudiness-container weather-subcontainer">
-        <div class="cloudiness-text subcontainer-text"></div>
+      <div class="forecast-outer-container">
+        <div class="five-day-forecast-title">Five day forecast</div>
+        <div class="five-day-forecast-container"></div>
       </div>
     </div>
     <script src="script.js"></script>
